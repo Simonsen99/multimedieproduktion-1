@@ -222,7 +222,7 @@ footer .p1-footer {
     font-size: 17px;
 }
 
-.info li a {
+.info li a:hover {
     background: #FAC85C;
 }
 
