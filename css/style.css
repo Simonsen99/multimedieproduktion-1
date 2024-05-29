@@ -7,10 +7,16 @@
     text-decoration: none;
 }
 
+
 body {
     min-height: 100vh;
     background-color: #EEEFE9;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
 /*Styling af navbar */
 header {
     position: fixed;
