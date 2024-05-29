@@ -187,6 +187,36 @@ article.text {
     font-size: 20px;
 }
 
+/*Styling af filtrering*/
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+section.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: -6.5%;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #244436;
+    color: #EEEFE9;
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #244436 solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 
 
