@@ -1,0 +1,270 @@
+/*Reset Style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #EEEFE9;
+}
+/*Styling af navbar */
+header {
+    position: fixed;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #244436;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+header .logo img {
+    height: 300px;
+    margin-top: 55px;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+header .navbar ul li a {
+    color: #EEEFE9;
+    font-size: 25px;
+    padding: 20px;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #EEEFE9;
+    color: #244436;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #244436;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none
+}
+
+header label {
+    cursor: pointer;
+    color: #EEEFE9;
+    display: none;
+}
+
+/*Footer*/
+/* footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #244436;
+}
+
+footer .footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 20px
+} */
+
+section.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-gap: 80px;
+    background-color: #244436;
+}
+
+footer .about {
+    position: relative;
+    color: #EEEFE9;
+    font-weight: 500;
+  
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+footer .p1-footer {
+    color: #EEEFE9;
+    line-height: 30px;
+    font-size: 20px;
+   
+}
+
+.soMe {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+}
+
+.soMe li{
+    list-style: none;
+}
+
+.soMe a {
+    color: #EEEFE9;
+    font-size: 45px;
+}
+
+.soMe li a:hover{
+    color: #FAC85C;
+}
+
+.links {
+    position: relative;
+    color: #EEEFE9;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    
+}
+
+.links h2{
+    margin-bottom: 15px;
+    
+}
+
+.links li {
+    list-style: none;
+    
+}
+
+.links li a{
+    color: #EEEFE9;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+.links li a:hover {
+    color: #FAC85C;
+
+}
+
+.social_media {
+    color: #EEEFE9;
+}
+
+.contact {
+    position: relative;
+    color: #EEEFE9;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+
+.contact h2 {
+    color: #EEEFE9;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li a  {
+    color: #EEEFE9;
+    
+}
+
+.contact ul li a i {
+    left: 0;
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+/*Media queries*/
+@media (max-width:991px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: -90px;
+    }
+
+    header label {
+        display: initial;
+        font-size: 30px;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #244436;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+
+
+
+
+
+    footer .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        padding: 20px;
+    }
+}
