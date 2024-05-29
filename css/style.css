@@ -90,6 +90,32 @@ header label {
     display: none;
 }
 
+
+
+
+/*Styling af video*/
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+.background-clip {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+video.backgroundclip {
+    margin-top: 280px;
+    opacity: 50%;
+}
+
+
+
+
+
 /*Footer*/
 footer {
     position: relative;
@@ -276,6 +302,11 @@ footer .p1-footer {
 
     #menu-bar:checked ~ .navbar {
         display: initial;
+    }
+
+
+    .backgroundclip{
+        width: 100%;
     }
 
 
