@@ -316,6 +316,51 @@ img {
     display: flex;
 }
 
+/*Styling af aroma adventure*/
+h1.overhead_aa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: left;
+    margin-top: 30px;
+    margin-left: 140px;
+    font-size: 50px;
+}
+
+.aa_text {
+    margin-left: 140px;
+    margin-bottom: 2%;
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.aa_text a {
+    margin-top: -30px;
+    color: black;
+}
+
+article.space {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+.aa_text ul {
+    margin-top: -30px;
+    margin-left: 50px;
+}
+
+p.pris {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
 
 
 /*Styling af Footer*/
@@ -632,6 +677,29 @@ footer .p1-footer {
         margin-top: 80px;
         gap: 30px;
     }
+
+    h1.overhead_aa {
+        display: flex;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .aa_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        margin-left: 20px;
+        gap: 30px;
+    }
+
+    article.space {
+        margin-top: -7px;
+    }
+
+    
+
+
 
     
 
