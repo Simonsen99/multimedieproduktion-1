@@ -19,10 +19,10 @@
     <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Øluniverset</a>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="oluniverset.html">Øluniverset</a>
                 <ul>
-                    <li><a href="#">Pilsner</a></li>
+                    <li><a href="pilsner.html">Pilsner</a></li>
                     <li><a href="#">Classic</a></li>
                     <li><a href="#">IPA</a></li>
                     <li><a href="#">Fruity Fusion</a></li>
@@ -33,12 +33,12 @@
                     <li><a href="#">Caféer</a></li>
                     <li><a href="#">Barer</a></li>
                     <li><a href="#">Restauranter</a></li>
-                    <li><a href="#">Supermarkeder</a></li>
+                    <li><a href="supermarkeder.html">Supermarkeder</a></li>
                 </ul>
             </li>
             <li><a href="#">Events</a>
                 <ul>
-                    <li><a href="#">Aroma Adventure</a></li>
+                    <li><a href="aromaAdventure.html">Aroma Adventure</a></li>
                     <li><a href="#">Flavor Expedition</a></li>
                 </ul>
             </li>
@@ -68,9 +68,6 @@
         <p>Ølsmagningen inkluderer:</p>
     </article>
 
-    
-    
-
     <ul>
         <li>7 forskellige øl smage</li>
         <li>Let anretning</li>
@@ -78,8 +75,56 @@
         <li>Rundvisning</li>
     </ul>
 
-    <p class="pris">Pris: 685,- kr.</p>
+    <p class="pris">Pris: 695,- kr.</p>
 </section>
+
+<div class="min-kalender"><h1>Vælg dato</h1>
+    <div class="calendar">
+      <header class="calender-header">
+        <h3>July 2024</h3>
+        <nav>
+          <button id="prev"></button>
+          <button id="next"></button>
+        </nav>
+      </header>
+      <section>
+        <ul class="days">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="dates"><li class="inactive">30</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li class="inactive">1</li><li class="inactive">2</li><li class="inactive">3</li></ul>
+      </section>
+    </div>
+</div>
+
+<!-- <article class="calender">
+    <header class="calender-header">
+        <h3></h3>
+        <nav>
+            <button id="prev"></button>
+            <button id="next"></button>
+        </nav>
+    </header>
+
+    <div>
+        <ul class="days">
+            <li>Søn</li>
+            <li>Man</li>
+            <li>Tir</li>
+            <li>Ons</li>
+            <li>Tor</li>
+            <li>Fre</li>
+            <li>Lør</li>
+        </ul>
+        <ul class="dates"></ul>
+    </div>
+</article> -->
+
 
 <!--Kodning af footer-->
 <footer>
@@ -119,6 +164,7 @@
         </article>
     </section>
 </footer>
+<script src="scripts/calender.js" defer></script>
 
 </body>
 </html>

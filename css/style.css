@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
+
 }
 
 
@@ -25,7 +24,7 @@ header {
     left: 0;
     right: 0;
     background: #244436;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, .1); */
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -50,14 +49,25 @@ header .navbar ul li{
 
 header .navbar ul li a {
     color: #EEEFE9;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     display: block;
+   
+}
+nav.navbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: -20px;
+}
+
+header .navbar ul li ul li a{
+    font-size: 20px;
 }
 
 header .navbar ul li a:hover {
     background: #EEEFE9;
     color: #244436;
+    
 }
 
 header .navbar ul li ul {
@@ -93,7 +103,7 @@ article.overhead {
     margin-top: 200px;
 }
 
-h1 {
+.overhead h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +159,7 @@ section.products {
     gap: 150px;
 }
 
-img {
+section.flasker img {
     height: 335px;
 }
 
@@ -160,7 +170,6 @@ h3 {
 }
 
 /*Styling af øluniverset*/
-
 h1.overhead_oluniverset {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -181,36 +190,7 @@ article.text {
     line-height: 40px;
 }
 
-/*Styling af filtrering*/
-/* .dropdown {
-    min-width: 15em;
-    position: relative;
-    margin: 2em;
-}
 
-section.dropdown {
-    display: flex;
-    justify-content: center;
-    margin-top: -6.5%;
-}
-
-.dropdown * {
-    box-sizing: border-box;
-}
-
-.select {
-    background: #244436;
-    color: #EEEFE9;
-    width: 14%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px #244436 solid;
-    border-radius: 0.5em;
-    padding: 1em;
-    cursor: pointer;
-    transition: 0.3s;
-} */
 
 /*Styling af øluniverset*/
 h2.pilsner {
@@ -280,6 +260,10 @@ section.daaser {
     margin-bottom: 50px;
 }
 
+section.daaser img {
+    height: 335px;
+
+}
 
 section.daaser h3 {
     justify-content: left;
@@ -319,7 +303,7 @@ img {
 /*Styling af aroma adventure*/
 h1.overhead_aa {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: left;
     margin-top: 30px;
     margin-left: 140px;
@@ -330,7 +314,7 @@ h1.overhead_aa {
     margin-left: 140px;
     margin-bottom: 2%;
     margin-right: 100px;
-    margin-top: 30px;
+    margin-top: -140px;
     line-height: 40px;
     font-size: 20px;
 
@@ -505,6 +489,109 @@ footer .p1-footer {
     color: #FAC85C;
 }
 
+/* css til min kalender */
+h1 {
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-weight: 600;
+  }
+  .calendar {
+    margin: auto;
+    width: 98%;
+    max-width: 380px;
+    padding: 1rem;
+    background: #FAC85C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .calendar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .calendar nav {
+    display: flex;
+    align-items: center;
+  }
+  .calendar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .calendar ul li {
+    width: calc(100% / 7);
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  #prev,
+  #next {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  #prev::before,
+  #next::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #ccc;
+  }
+  #next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+  #prev:hover::before,
+  #next:hover::before {
+    border-color: #000;
+  }
+  .days {
+    font-weight: 600;
+  }
+  .dates li.today {
+    color: #fff;
+  }
+  .dates li.today::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .dates li.inactive {
+    color: #ccc;
+  }
+  header.calender-header {
+    height: 3vh;
+    background-color: #FAC85C;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 
 
 
@@ -613,9 +700,7 @@ footer .p1-footer {
         
     }
 
-    section.flasker img {
-        height: 230px;
-    }
+    
 
     h1.overhead_pilsner {
         display: flex;
