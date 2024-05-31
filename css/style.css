@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     background-color: #EEEFE9;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 
@@ -713,6 +714,14 @@ h3.vaelg {
     cursor: pointer;
 }
 
+aside.bestil {
+    margin-left: -150px;
+}
+
+.kob {
+    margin-left: -213px;
+}
+
 /*css til filtrering*/
 .dropdown {
     min-width: 15em;
@@ -743,8 +752,6 @@ section.dropdown {
     cursor: pointer;
     transition: 0.3s;
 }
-
-
 
 
 .select:hover {
@@ -1054,7 +1061,7 @@ section.dropdown {
     }
 
     .wrapper {
-        margin-left: -122px;
+        margin-left: -30px;
     }
 
     h3.filt {
@@ -1068,6 +1075,10 @@ section.dropdown {
     }
     ul.menu.menu-open {
         width: 50%;
+    }
+
+    aside.bestil {
+        margin-left: 210px;
     }
 
 
