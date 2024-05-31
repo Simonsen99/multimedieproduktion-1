@@ -344,8 +344,11 @@ article.space {
 }
 
 .aa_text ul {
-    margin-top: -30px;
     margin-left: 50px;
+}
+
+p.include {
+    margin-top: -55px;
 }
 
 .aa_text ul p {
@@ -1078,10 +1081,10 @@ h3.filt1 {
         justify-content: left;
         /* align-items: left;   */
     }
-    .aa_text ul p {
-        display: flex;
-        margin-left: -50px;
-        margin-top: 30px;
+    
+
+    p.include {
+        margin-top: -10px;
     }
 
     .aa_text ul {
