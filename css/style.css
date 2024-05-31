@@ -306,6 +306,7 @@ section.supermarked_text {
 img {
     height: 84px;
     display: flex;
+    margin-bottom: 40px;
 }
 
 /*Styling af aroma adventure*/
@@ -817,14 +818,28 @@ ul.menu.menu-open {
 }
 
 h3.filt {
-    margin-left: -280px;
-    display: flex;
+    margin-left: -320px;
     margin-top: initial;
 }
 section.dropdown {
     display: flex;
     justify-content: center;
     margin-top: -4.5%;
+}
+
+section.supermarked-filtrer {
+    margin-left: 470px;
+    
+}
+
+.landsdel {
+    margin-bottom: 80px;
+    margin-top: 45px;
+}
+
+h3.filt1 {
+    margin-left: -820px;
+    margin-top: initial; 
 }
 
 
@@ -846,6 +861,11 @@ section.dropdown {
     header label {
         display: initial;
         font-size: 30px;
+    }
+
+    header .logo img {
+        height: 300px;
+        margin-top: 90px;
     }
 
     header .navbar{
@@ -995,9 +1015,15 @@ section.dropdown {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         margin-top: 80px;
         gap: 30px;
+        
+    }
+
+    img.rema {
+        width: 435px;
     }
 
     h1.overhead_aa {
@@ -1068,6 +1094,13 @@ section.dropdown {
         margin-top: 20px;
         margin-left: -340px;
     }
+
+    h3.filt1 {
+        margin-top: 20px;
+        margin-left: -800px;
+    }
+
+    
 
     .select {
         width: 40%;

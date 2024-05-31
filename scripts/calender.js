@@ -3,13 +3,13 @@ const dates = document.querySelector(".dates");
 const navs = document.querySelectorAll("#prev, #next");
 
 const months = [
-  "January",
-  "February",
-  "March",
+  "Januar",
+  "Februar",
+  "Marts",
   "April",
-  "May",
-  "June",
-  "July",
+  "Maj",
+  "Juni",
+  "Juli",
   "August",
   "September",
   "October",
