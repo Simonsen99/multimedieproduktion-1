@@ -642,7 +642,7 @@ h3.vaelg {
     height: 20vh;
     width: 100%;
     display: flex;
-    align-items: left;
+    /* align-items: left; */
     justify-content: left;
     margin-left: 140px;
     }
@@ -842,6 +842,24 @@ h3.filt1 {
     margin-top: initial; 
 }
 
+/*Styling af my carousel*/
+/* .cell {
+    width: 33%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: none;
+}
+
+.cell img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+   
+} */
+
+
 
 
 
@@ -923,6 +941,10 @@ h3.filt1 {
         flex-direction: column;
     }
 
+    section.flasker {
+        display: none;
+    }
+
 
     h1.overhead_oluniverset {
         display: flex;
@@ -950,12 +972,12 @@ h3.filt1 {
         color: black;
     }
 
-    section.flasker {
+    /* section.flasker {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         
-    }
+    } */
 
     
 
@@ -1007,7 +1029,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
+        /* align-items: left; */
         margin-left: 20px;
     }
 
@@ -1036,7 +1058,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
+        /* align-items: left; */
         margin-left: 20px;
         margin-top: 10px;
         gap: 30px;
@@ -1046,7 +1068,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column; 
         justify-content: left;
-        align-items: left;
+        /* align-items: left; */
     }
 
     article.space {
@@ -1054,7 +1076,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;  
+        /* align-items: left;   */
     }
     .aa_text ul p {
         display: flex;
@@ -1066,7 +1088,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;   
+        /* align-items: left;    */
     }
 
     h3.calender-h3 {
@@ -1077,7 +1099,7 @@ h3.filt1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
+        /* align-items: left; */
         margin-left: -50px;
     }
 
@@ -1114,7 +1136,25 @@ h3.filt1 {
         margin-left: 210px;
     }
 
+    .cell {
+        width: 33%;
+        height: 350px;
+        margin: 0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+        
+    }
+    
+    .cell img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        
+    }
+    
+    
 
+    
     
     
     

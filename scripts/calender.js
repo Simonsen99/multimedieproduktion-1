@@ -66,8 +66,7 @@ navs.forEach((nav) => {
     }
 
     date = new Date(year, month, new Date().getDate());
-    year = date.getFullYear();
-    month = date.getMonth();
+
 
     renderCalendar();
   });

@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Kulinarisk smagseventyr med alkoholfri øl">
+    <meta name="keywords" content="kulinarisk, smagsoplevelse, alle kategorier, event, aroma adventure, eventyr">
+    <meta name="author" content="Carina Simonsen">
+
     <title>Aroma Adventure</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -69,8 +74,8 @@
 
     </article>
 
+    <p>Ølsmagningen inkluderer:</p>
     <ul>
-        <p>Ølsmagningen inkluderer:</p>
         <li>7 forskellige øl smage</li>
         <li>Let anretning</li>
         <li>Mulighed for at købe vores øl efter arrangementet.</li>
@@ -167,7 +172,32 @@
     </section>
 </footer>
 <script src="scripts/calender.js" defer></script>
-<script src="scripts/wrapper.js" defer></script>
+
+<script>
+    const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
+
+    let a = 1;
+
+    plus.addEventListener("click", ()=>{
+        a++;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+        console.log(a);
+    });
+
+    minus.addEventListener("click", ()=>{
+        if(a > 1) {
+            a--;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+            console.log(a);
+        }
+    });
+
+    
+</script>
 
 </body>
 </html>

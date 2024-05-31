@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bredeste udvalg af alkoholfri øl">
+    <meta name="keywords" content="alkoholfri øl, alkoholfri, øl, pilsner, classic, IPA, Fruity Fusion, populære produkter, forhandler, events">
+    <meta name="author" content="Carina Simonsen">
+    
     <title>Zero Buzz Brew</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -10,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- Kodning af navbar-->
@@ -83,6 +90,12 @@
     </article>
 </section>
 
+<!-- Kodning af carousel -->
+<!-- <div class="main-carousel">
+    <div class="cell"><img src="img/vednokpilsflasker.webp" alt="Den du ved nok"></div>
+    <div class="cell"><img src="img/sommerpilsflasker.webp" alt="Solskinspilsner"></div>
+    <div class="cell"><img src="img/juleflasker.webp" alt="Julepilsneren"></div>
+</div> -->
 
 <!--Kodning af footer-->
 <footer>
@@ -122,6 +135,16 @@
         </article>
     </section>
 </footer>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround:true,
+  freeScroll: true
+});
+</script>
 
 </body>
 </html>
