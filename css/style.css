@@ -14,9 +14,6 @@ body {
     text-decoration: none;
 }
 
-
-
-
 /*Styling af navbar */
 header {
     position: relative;
@@ -191,9 +188,6 @@ article.text {
     line-height: 40px;
 }
 
-
-
-/*Styling af øluniverset*/
 h2.pilsner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -245,7 +239,7 @@ section.daaser {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: left;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: 140px;
     text-decoration: none;
     
@@ -844,6 +838,18 @@ h3.filt1 {
     margin-left: -820px;
     margin-top: initial; 
 }
+
+
+
+
+/* div.variant {
+    margin-left: 420px;
+    margin-top: -87px;
+}
+
+.filter {
+    margin-left: -170px;
+} */
 
 /*Styling af my carousel*/
 /* .cell {
